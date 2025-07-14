@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Técnico | Reforço para Ensino Médio Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-graduation-cap text-blue-600 text-3xl mr-2"></i>
+                <h1 class="text-2xl font-bold text-blue-600">Pré<span class="text-blue-800">-Técnico</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-blue-600 font-medium hover:text-blue-800 transition">Início</a>
+                <a href="#cursos" class="text-gray-600 hover:text-blue-600 transition">Cursos</a>
+                <a href="#metodologia" class="text-gray-600 hover:text-blue-600 transition">Metodologia</a>
+                <a href="#professores" class="text-gray-600 hover:text-blue-600 transition">Professores</a>
+                <a href="#contato" class="text-gray-600 hover:text-blue-600 transition">Contato</a>
+            </nav>
+            <button class="md:hidden text-blue-600" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
+            <a href="#inicio" class="block py-2 text-blue-600 font-medium">Início</a>
+            <a href="#cursos" class="block py-2 text-gray-600">Cursos</a>
+            <a href="#metodologia" class="block py-2 text-gray-600">Metodologia</a>
+            <a href="#professores" class="block py-2 text-gray-600">Professores</a>
+            <a href="#contato" class="block py-2 text-gray-600">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Prepare-se para o Ensino Médio Técnico</h1>
+                <p class="text-xl mb-8">O reforço escolar que vai te ajudar a conquistar sua vaga nas melhores escolas técnicas do país.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300 text-center">Matricule-se agora</a>
+                    <a href="#cursos" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 text-center">Conheça nossos cursos</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Estudantes em sala de aula" class="rounded-xl shadow-2xl w-full max-w-lg floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-blue-50 rounded-xl">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">98%</div>
+                    <div class="text-gray-700">Taxa de aprovação</div>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">10+</div>
+                    <div class="text-gray-700">Anos de experiência</div>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl">
+                    <div class="text-blue-600 text-4xl font-bold mb-2">1000+</div>
+                    <div class="text-gray-700">Alunos aprovados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Cursos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Preparação específica para os principais vestibulinhos de escolas técnicas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Curso 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="h-48 bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-flask text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">ETEC - Todas as áreas</h3>
+                        <p class="text-gray-600 mb-4">Preparação completa para o vestibulinho da ETEC com foco em todas as áreas técnicas disponíveis.</p>
+                        <ul class="mb-4 text-gray-700">
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Matemática intensiva</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Português e redação</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Ciências da natureza</li>
+                        </ul>
+                        <a href="#contato" class="text-blue-600 font-medium hover:text-blue-800 flex items-center">Saiba mais <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Curso 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="h-48 bg-green-600 flex items-center justify-center">
+                        <i class="fas fa-cogs text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">IFSP - Cursos técnicos</h3>
+                        <p class="text-gray-600 mb-4">Foco nos cursos técnicos do Instituto Federal com material específico para cada área.</p>
+                        <ul class="mb-4 text-gray-700">
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Matemática avançada</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Interpretação de textos</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Raciocínio lógico</li>
+                        </ul>
+                        <a href="#contato" class="text-green-600 font-medium hover:text-green-800 flex items-center">Saiba mais <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Curso 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="h-48 bg-purple-600 flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Técnico em Informática</h3>
+                        <p class="text-gray-600 mb-4">Preparação especializada para os vestibulinhos de informática com noções básicas da área.</p>
+                        <ul class="mb-4 text-gray-700">
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Lógica de programação</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Matemática computacional</li>
+                            <li class="mb-1 flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Inglês técnico</li>
+                        </ul>
+                        <a href="#contato" class="text-purple-600 font-medium hover:text-purple-800 flex items-center">Saiba mais <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section id="metodologia" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossa Metodologia</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Um método comprovado que já ajudou centenas de alunos a conquistarem suas vagas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-book-open text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Material Exclusivo</h3>
+                    <p class="text-gray-600">Apostilas desenvolvidas com base nos últimos vestibulinhos, contendo teoria, exercícios resolvidos e simulados.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-green-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Turmas Reduzidas</h3>
+                    <p class="text-gray-600">Atenção personalizada com turmas de no máximo 15 alunos, permitindo acompanhamento individualizado.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Simulados Periódicos</h3>
+                    <p class="text-gray-600">Avaliações regulares no formato dos vestibulinhos para acompanhar o desenvolvimento e identificar pontos de melhoria.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-xl p-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Plantão de Dúvidas</h3>
+                    <p class="text-gray-600 mb-4">Além das aulas regulares, oferecemos plantões semanais para tirar dúvidas e reforçar conteúdos específicos.</p>
+                    <p class="text-gray-600">Nossos professores estão disponíveis também por WhatsApp para responder questões fora do horário de aula.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Professora ajudando aluno" class="rounded-lg shadow-md w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professores Section -->
+    <section id="professores" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Professores</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Equipe qualificada com experiência em preparação para vestibulinhos</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Professor 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-6 transition-all duration-300 hover:shadow-lg">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-100 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Professora Ana" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Profª Ana Silva</h3>
+                    <p class="text-blue-600 font-medium mb-4">Matemática</p>
+                    <p class="text-gray-600 text-sm">10 anos preparando alunos para ETEC e IFSP. Mestra em Educação Matemática.</p>
+                </div>
+                
+                <!-- Professor 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-6 transition-all duration-300 hover:shadow-lg">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-100 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Professor Carlos" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Prof. Carlos Mendes</h3>
+                    <p class="text-green-600 font-medium mb-4">Ciências da Natureza</p>
+                    <p class="text-gray-600 text-sm">Licenciado em Química com especialização em ensino técnico.</p>
+                </div>
+                
+                <!-- Professor 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-6 transition-all duration-300 hover:shadow-lg">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-100 mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Professora Juliana" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Profª Juliana Rocha</h3>
+                    <p class="text-purple-600 font-medium mb-4">Português e Redação</p>
+                    <p class="text-gray-600 text-sm">Doutora em Linguística com foco em produção textual para vestibulares.</p>
+                </div>
+                
+                <!-- Professor 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-6 transition-all duration-300 hover:shadow-lg">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-blue-100 mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Professor Ricardo" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Prof. Ricardo Alves</h3>
+                    <p class="text-yellow-600 font-medium mb-4">Informática</p>
+                    <p class="text-gray-600 text-sm">Engenheiro de Computação com experiência em ensino técnico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Depoimentos de Alunos</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Veja o que nossos ex-alunos dizem sobre a preparação no Pré-Técnico</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Aluna Fernanda" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Fernanda Oliveira</h4>
+                            <p class="text-sm opacity-80">Aprovada ETEC Informática</p>
+                        </div>
+                    </div>
+                    <p class="italic">"O material de matemática do Pré-Técnico foi essencial para minha aprovação. As aulas são dinâmicas e os professores estão sempre disponíveis para tirar dúvidas."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Aluno Lucas" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lucas Santos</h4>
+                            <p class="text-sm opacity-80">Aprovado IFSP Mecatrônica</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Os simulados periódicos me deram confiança para a prova real. A correção detalhada me mostrou exatamente onde precisava melhorar. Recomendo muito!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Aluna Beatriz" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Beatriz Costa</h4>
+                            <p class="text-sm opacity-80">Aprovada ETEC Enfermagem</p>
+                        </div>
+                    </div>
+                    <p class="italic">"A professora de português transformou minha redação. Fui da nota 5 para 9 em três meses de curso. As técnicas de interpretação de texto também foram essenciais."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tire suas dúvidas ou faça sua pré-matrícula</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="mb-6">
+                            <label for="nome" class="block text-gray-700 font-medium mb-2">Nome completo</label>
+                            <input type="text" id="nome" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="telefone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="telefone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="curso" class="block text-gray-700 font-medium mb-2">Curso de interesse</label>
+                            <select id="curso" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Selecione um curso</option>
+                                <option value="etec">ETEC - Todas as áreas</option>
+                                <option value="ifsp">IFSP - Cursos técnicos</option>
+                                <option value="informatica">Técnico em Informática</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="mensagem" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="mensagem" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Enviar mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-50 p-8 rounded-xl h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                <p class="text-gray-600">Rua das Escolas, 123 - Centro<br>São Paulo/SP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                <p class="text-gray-600">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">E-mail</h4>
+                                <p class="text-gray-600">contato@pretecnico.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                <p class="text-gray-600">Segunda a sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas redes sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Perguntas Frequentes</h2>
+                <p class="text-gray-600">Tire suas dúvidas sobre nossos cursos e metodologia</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="font-bold text-gray-800">Qual a duração do curso preparatório?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Nossos cursos têm duração de 6 meses, com aulas 2 vezes por semana. Oferecemos também um curso intensivo de 3 meses para quem precisa se preparar em menos tempo.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="font-bold text-gray-800">O material didático está incluso no valor?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Sim, todas as apostilas e materiais de apoio estão inclusos na mensalidade. Você receberá material físico e acesso à plataforma digital com conteúdo complementar.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="font-bold text-gray-800">Há algum desconto para irmãos ou grupos?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Oferecemos 10% de desconto para o segundo irmão matriculado. Grupos de 3 ou mais alunos da mesma escola também têm direito a descontos especiais.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                        <h3 class="font-bold text-gray-800">Como são as aulas online?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">As aulas online acontecem ao vivo, com interação em tempo real com o professor. Todas as aulas ficam gravadas e disponíveis por 30 dias para revisão. O material é o mesmo do curso presencial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para começar sua jornada?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Garanta sua vaga no melhor curso preparatório para ensino médio técnico da região.</p>
+            <a href="#contato" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">Matricule-se agora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-blue-400 text-2xl mr-2"></i>
+                        <h3 class="text-xl font-bold">Pré<span class="text-blue-300">-Técnico</span></h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">O reforço escolar que prepara você para os principais vestibulinhos de escolas técnicas.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition">Início</a></li>
+                        <li><a href="#cursos" class="text-gray-400 hover:text-white transition">Cursos</a></li>
+                        <li><a href="#metodologia" class="text-gray-400 hover:text-white transition">Metodologia</a></li>
+                        <li><a href="#professores" class="text-gray-400 hover:text-white transition">Professores</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Cursos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">ETEC - Todas as áreas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">IFSP - Cursos técnicos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Técnico em Informática</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Intensivo de Férias</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Assine nossa newsletter e receba materiais gratuitos e dicas para o vestibulinho.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none">
+                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Pré-Técnico. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission (example)
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Obrigado pelo seu interesse! Entraremos em contato em breve.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
